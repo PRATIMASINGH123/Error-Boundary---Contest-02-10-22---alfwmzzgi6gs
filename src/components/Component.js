@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const Component = (props) => {
-    
-    const [error, setError] = useState(false);
 
+  const {error , change} = props;  
+  
   return (
     <>
     {    
-        error && <div>{somethingNotDefined}</div>
+       error && <div>{somethingNotDefined}</div>
     }
     </>
   );
